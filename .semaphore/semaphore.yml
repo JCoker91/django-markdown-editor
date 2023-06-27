@@ -8,11 +8,11 @@ blocks:
   - name: Build
     task:
       jobs:
-        - name: Pipenv
+        - name: Pip
           commands:
             - sem-version python 3.9
             - checkout
             - mkdir .pip_cache
             - cache restore
-            - pipenv install --cache-dir .pip_cache -r requirements.txt
+            - pip install --cache-dir .pip_cache -r requirements.txt
             - cache store
