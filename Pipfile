@@ -1,0 +1,19 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+django = ">=3.2"
+markdown = "==3.3.4"
+requests = "*"
+bleach = "*"
+martor = "*"
+gunicorn = "*"
+pylint-django = "*"
+flake8 = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.11"
